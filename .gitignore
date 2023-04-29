@@ -2,3 +2,5 @@ notes.txt
 .env
 node_modules
 p-2
+*.png
+*.jpg
