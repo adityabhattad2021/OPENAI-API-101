@@ -9,8 +9,8 @@ function App() {
         <input/>
         <CodeDisplay/>
         <div className="button-container">
-          <button>Get Query</button>
-          <button>Clear Chat</button>
+          <button id="get-query">Get Query</button>
+          <button id="clear-chat">Clear Chat</button>
         </div>
     </div>
   );

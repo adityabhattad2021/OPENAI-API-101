@@ -1,7 +1,14 @@
 function CodeDisplay(){
     return (
         <div className="code-display">
-            Code Display
+            <div className="buttons">
+                <div className="button first"></div>
+                <div className="button middle"></div>
+                <div className="button last"></div>
+            </div>
+            <div className="code-output">
+                <p></p>
+            </div>
         </div>
     )
 }

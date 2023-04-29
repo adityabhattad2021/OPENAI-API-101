@@ -1,7 +1,9 @@
-function MessageDisplay(){
+function MessageDisplay() {
     return (
         <div className="message-display">
-            MessageDisplay
+            <p id="icon">X</p>
+            <p>User</p>
+            <p>Messages</p>
         </div>
     )
 }
