@@ -1,10 +1,9 @@
-*{
+* {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(34, 34, 34);
 }
 
-
-body{
+body {
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,67 +13,67 @@ body{
   background-color: rgb(250, 250, 250);
 }
 
-p,input{
+p,
+input {
   font-family: 16px;
 }
 
-.App{
+.App {
   height: 80vh;
   width: 80vh;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  box-shadow: rgba(0,0,0,0.16) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-
-.code-display{
+.code-display {
   width: 96%;
   margin: 2%;
   height: 46%;
   border-radius: 8px;
   background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
-
-.buttons{
+.buttons {
   width: 100%;
-  height: 100%;
+  height: 10%;
   background-color: rgb(50, 50, 50);
   display: flex;
-  margin-top:5px;
+  margin-top: 5px;
   padding-left: 5px;
 }
 
-.button{
+.button {
   height: 15px;
   width: 15px;
   border-radius: 50%;
   margin: 4px;
 }
 
-.button.first{
+.button.first {
   background-color: rgb(255, 96, 86);
 }
-.button.middle{
+.button.middle {
   background-color: rgb(255, 189, 45);
 }
-.button.last{
+.button.last {
   background-color: rgb(38, 201, 64);
 }
 
-.messages-display{
+.messages-display {
   width: 96%;
   margin: 2%;
   height: 46%;
   overflow-y: scroll;
 }
 
-
-.message-display{
+.message-display {
   width: 100%;
   display: flex;
   border-radius: 5px;
@@ -83,23 +82,23 @@ p,input{
   margin: 5px 0px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: rgba(0,0,0,0.5);
-  -webkit-box-shadow:0 0 1px rgba(255,255,255,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-p#icon{
+p#icon {
   padding: 0 7px;
   cursor: pointer;
 }
 
-input{
+input {
   margin-left: 15px;
   margin-right: 15px;
   padding-top: 15px;
@@ -107,11 +106,11 @@ input{
   border-radius: 8px;
 }
 
-input:focus{
+input:focus {
   border: none;
 }
 
-.button-container{
+.button-container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -120,7 +119,7 @@ input:focus{
   margin-bottom: 10px;
 }
 
-.button-container button{
+.button-container button {
   border-radius: 10px;
   text-transform: uppercase;
   border: none;
@@ -128,19 +127,33 @@ input:focus{
   cursor: pointer;
 }
 
-button#get-query{
+button#get-query {
   background-color: rgb(255, 95, 86);
 }
 
-button#clear-chat{
-  background-color: rgb(255, 189,45);
+button#clear-chat {
+  background-color: rgb(255, 189, 45);
 }
-button#get-query:hover{
+button#get-query:hover {
   background-color: rgb(236, 110, 103);
   color: white;
 }
 
-button#clear-chat:hover{
+button#clear-chat:hover {
   background-color: rgb(232, 197, 122);
   color: white;
+}
+
+.code-output {
+  height: 90%;
+  margin: 20px;
+}
+
+.code-output p {
+  color: rgb(255, 189, 45) !important;
+}
+
+
+input{
+  padding:20px
 }

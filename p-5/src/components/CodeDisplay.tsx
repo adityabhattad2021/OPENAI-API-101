@@ -1,4 +1,15 @@
-function CodeDisplay(){
+
+
+interface CodeDisplayProps {
+    text: string
+}
+
+function CodeDisplay({ text }: CodeDisplayProps) {
+
+    const regex = /```([^`]*)```/;
+    const codeMatch = text.match(regex);
+    const code = codeMatch?.[1];
+
     return (
         <div className="code-display">
             <div className="buttons">
@@ -7,7 +18,7 @@ function CodeDisplay(){
                 <div className="button last"></div>
             </div>
             <div className="code-output">
-                <p></p>
+                <p>{code}</p>
             </div>
         </div>
     )

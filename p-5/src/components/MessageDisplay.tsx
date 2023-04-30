@@ -1,9 +1,20 @@
-function MessageDisplay() {
+
+
+interface UserMessage {
+    role:string,
+    content:string,
+}
+
+interface MessageDisplayProps {
+    message:UserMessage
+} 
+
+function MessageDisplay({message}:MessageDisplayProps) {
     return (
         <div className="message-display">
-            <p id="icon">X</p>
-            <p>User</p>
-            <p>Messages</p>
+            <p id="icon">&#x229A;</p>
+            <p>{message.role}</p>
+            <p>{message.content}</p>
         </div>
     )
 }
